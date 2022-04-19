@@ -10,14 +10,14 @@ Using unsupervised machine learning to discover patterns in the data
 - Libraries: Pandas, Scikit-learn, Plotly, hvPlot
 
 ### Project Overview
-The influential investment bank Accountability Accounting plans to offer a new cryptocurrency investment portfolio to its customers. The group is interested a classification system for existing currencies. The data, however, don’t lend themselves to discrete categories that fit the structured machine learning processes. Rather, the qualitative nature of the data requires an unstructured approach. </br>
+The influential investment bank Accountability Accounting plans to offer a new cryptocurrency investment portfolio to its customers. The group is interested in a classification system for existing currencies. The data, however, don’t lend themselves to the discrete categories that are needed in fitting a structured machine learning model. Rather, the qualitative nature of the data requires an unstructured approach. </br>
 
 With a clustering algorithm decided upon, the following steps were taken: </br>
 - Data were preprocessed with feature extraction and standardized for use in Principal Component Analysis.
 - Cryptocurrency features (mined coins, supplied coins, algorithms for encryption and transaction validations) were reduced to three dimensions using PCA.
-- The reduced dimensions were clustered into groups of similar means to determine patterns in cryptocurrencies using K-means algorithm. </br>
+- The reduced dimensions were clustered into groups of similar means using K-means in order to determine patterns in the cryptocurrencies. </br>
   - Prior to running the algorithm, an elbow curve was created to find the best value for K when clustering data. </br>
-  - A new data frame was created using coin, names, feature data, cluster data and predicted class.
+  - A new data frame was created using coin names, feature data, cluster data and predicted class.
 - Visualization was used to present the results with a 3D scatterplot of three clusters and an interactive hvplot of coins by class.
 
 ### Results
@@ -27,5 +27,3 @@ A 3D scatterplot displayed the groups corresponding with the four clusters into 
 ![crypto_pca](https://user-images.githubusercontent.com/30667001/163815093-1106c6dc-3ad9-437c-92cd-c265eb5ccde9.png) </br> </br> </br>
 Data exploration of 532 tradable cryptocurrencies was made easier with an hvplot.</br>
 ![crypto_plothv](https://user-images.githubusercontent.com/30667001/163840678-cbcb0572-d869-47fa-b5d0-ff50b8bfa461.png)
-
-
